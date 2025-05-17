@@ -1,0 +1,70 @@
+.register-container {
+    height: 97vh;
+    width: 100%;
+    background-image:url(../assets/blue-brush-stroke-frame.jpg) ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: rgb(24, 2, 2);
+    width: 60%;
+    max-width: 270px; /* Smaller width on all screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  input, select {
+    width: 80%;
+    padding: 8px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    border-color: black;
+  }
+  button {
+    width: 50%;
+    padding: 12px;
+    background: #136cbf;
+    color: rgb(245, 241, 241);
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2035d7;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+}
+@media (max-width: 480px) {
+  .card {
+      max-width: 280px;
+      padding: 15px;
+  }
+
+  input,
+  select,
+  button {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .logo {
+      width: 60px;
+  }
+}

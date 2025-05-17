@@ -1,0 +1,381 @@
+/* Container */
+.student-list-container {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Add Button */
+.add-btn {
+  background-color: hsl(227, 73%, 53%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  flex: 0 0 auto;
+  width: auto;
+  white-space: nowrap;
+}
+.add-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Back Button */
+.back-btn {
+  background-color: #2e54df;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  width: 120px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 100%;
+}
+.back-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* Button Group (for placing Add and Back buttons in same row) */
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Table Wrapper for Responsiveness */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Table Styling */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(34, 6, 6, 0.05);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.student-table th,
+.student-table td {
+  border: 1px solid #000000;
+  padding: 12px;
+  text-align: center;
+}
+
+.student-table th {
+  background-color: #185adf;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.student-table td {
+  color: #4b5563;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.modal-content {
+  background: rgba(255, 255, 255, 0.712);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: rgb(0, 30, 255);
+  width: 200px;
+  box-shadow: 0 4px 10px rgb(63, 50, 246);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Modal Actions */
+.modal-actions {
+  align-items: center;
+  color: rgb(66, 68, 202);
+  border: none;
+  padding: 12px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Form Group */
+.student-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Form Inputs */
+.student-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Form Actions */
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Header and Filter Controls */
+.header-controls,
+.filter-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit Button */
+.edit-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.edit-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #f38333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.filter-controls input,
+.filter-controls select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  width: auto;
+  max-width: 200px;
+}
+
+.filter-controls input:focus,
+.filter-controls select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Responsive Adjustment */
+@media screen and (max-width: 768px) {
+  .header-controls,
+  .filter-controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .button-group {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .add-btn,
+  .back-btn {
+    flex: 1 1 auto;
+    min-width: 120px;
+  }
+
+  .modal,
+  .modal-content {
+    width: 90%;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .student-table th,
+  .student-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .filter-controls input,
+  .filter-controls select {
+    width: 100%;
+  }
+}
+
+/* Add Subject Button */
+.addsub-btn {
+  display: block;
+  margin: 10px auto;
+  width: 150px;
+}
+
+/* Handled Subjects Container */
+.handled-subjects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+/* Table Styling */
+.student-table2 {
+  width: 90%;
+  margin-left: 6rem;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(34, 6, 6, 0.05);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.student-table2 th,
+.student-table2 td {
+  border: 1px solid #000000;
+  padding: 12px;
+  text-align: center;
+}
+
+.student-table2 th {
+  background-color: #185adf;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.student-table2 td {
+  color: #4b5563;
+}
+
+.dash-btn {
+  float: right;
+  margin-right: 10px; /* Optional: spacing from the right edge */
+  padding: 8px 16px;  /* Optional: button size */
+  background-color:hsl(227, 73%, 53%); /* Optional: color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.sort-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-bar label {
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sort-dropdown {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.sort-dropdown:focus {
+  border-color: #5b9bd5;
+  outline: none;
+}
+
+.sort-dropdown option {
+  padding: 10px;
+}
+
+.sort-bar .sort-dropdown {
+  width: 200px;
+}
+
+.sort-bar:hover .sort-dropdown {
+  background-color: #e6f7ff;
+}
+
+.sort-bar .sort-dropdown option:hover {
+  background-color: #d3e7ff;
+}
+
+
+.action-btn{
+  background-color: hsl(31, 90%, 47%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  flex: 0 0 auto;
+  width: auto;
+  white-space: nowrap;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.712);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: rgb(0, 30, 255);
+  width: 320px;
+  box-shadow: 0 4px 10px rgb(63, 50, 246);
+  max-height: 80vh;
+  overflow-y: auto;
+}

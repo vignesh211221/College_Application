@@ -1,0 +1,98 @@
+.workdone-container {
+    padding: 20px;
+    font-family: sans-serif;
+    width: 300px;
+  }
+  
+  
+  
+  .date-selector {
+    margin-bottom: 20px;
+  }
+  
+  .date-selector input {
+    padding: 6px;
+    margin-left: 10px;
+    width: 150px; /* Adjust the width as per your preference */
+    max-width: 100%; /* Ensures it doesn't grow too wide */
+}
+  .no-periods {
+    color: #777;
+    font-style: italic;
+  }
+  
+  .period-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  
+  .period-card {
+    border: 1px solid #ccc;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background 0.3s;
+  }
+  
+  .period-card:hover {
+    background-color: #e2f0ff;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .modal input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .cancel {
+    background-color: #888;
+  }
+  
+  .submit {
+    background-color: #007bff;
+  }
+  
+  .submitted {
+    background-color: #f0f0f0; /* Light gray background for submitted periods */
+    cursor: not-allowed;
+  }

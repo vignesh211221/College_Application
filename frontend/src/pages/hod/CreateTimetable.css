@@ -1,0 +1,378 @@
+.create-timetable-container {
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  /* Page Highlight */
+  .highlight {
+    color: #0b5ed7;
+    font-weight: 600;
+    font-size: 27px; /* slightly reduced */
+    margin-bottom: 15px;
+  }
+  
+  /* Add & Submit Buttons */
+  .submit-btn {
+    background-color: #2e54df;
+    color: white;
+    border: none;
+    padding: 12px 8px;  /* reduced padding */
+    width: 40%;
+    font-size: 13px;     /* reduced font size */
+    cursor: pointer;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  .submit-btn:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Table Wrapper */
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Timetable Table */
+  .timetable-table {
+    width: 100%;
+    min-width: 800px; /* reduced from 1000px */
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(34, 6, 6, 0.05);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Table Cells */
+  .timetable-table th,
+  .timetable-table td {
+    border: 1px solid #000000;
+    padding: 8px;               /* reduced padding */
+    text-align: left;
+    min-width: 100px;           /* reduced from 140px */
+    font-size: 12px;            /* reduced font size */
+  }
+  
+  /* Table Header */
+  .timetable-table th {
+    background-color: #185adf;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  /* Table Body */
+  .timetable-table td {
+    color: #4b5563;
+  }
+  
+  /* Period Cell */
+  .period-cell {
+    display: flex;
+    flex-direction: column;
+    /* gap: px; */
+  }
+  
+  /* Edit/Delete Buttons Row */
+  .edit-delete-btns {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+  /* Edit Button */
+  .edit-btn2 {
+    background-color: #1acf47;
+    color: white;
+    border: none;
+    padding: 12px 10px;  /* reduced padding */
+    width: 30%;
+    font-size: 13px;     /* reduced font size */
+    cursor: pointer;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  .edit-btn2:hover {
+    background-color: #044b07;
+  }
+  
+  /* Delete Button */
+  .delete-btn2 {
+    background-color: #e88331;
+    color: white;
+    border: none;
+    padding: 12px 8px;  /* reduced padding */
+    width: 30%;
+    font-size: 13px;     /* reduced font size */
+    cursor: pointer;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  .delete-btn2:hover {
+    background-color: #aa440a;
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .create-timetable-container {
+      padding: 20px;
+    }
+  
+    .timetable-table th,
+    .timetable-table td {
+      font-size: 11px;
+      padding: 6px;
+    }
+  
+    .add-btn,
+    .submit-btn,
+    .edit-btn,
+    .delete-btn {
+      width: 100%;
+    }
+  
+    .edit-delete-btns {
+      flex-direction: column;
+    }
+  
+    .table-wrapper {
+      overflow-x: scroll;
+    }
+  
+    .timetable-table {
+      min-width: 700px;  /* smaller for mobile */
+    }
+  }
+  
+  /* Centered Submit Button Wrapper */
+  .submit-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .edit-delete-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .submit-btn2 {
+    background-color: #f58d2d;
+    color: white;
+    border: none;
+    padding: 12px 8px;  /* reduced padding */
+    width: 40%;
+    font-size: 13px;     /* reduced font size */
+    cursor: pointer;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  .submit-btn2:hover {
+    background-color: #a8650e;
+  }
+
+  
+  /* Staff Details Container */
+.staff-section {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Header */
+.staff-section h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #1e3a8a;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Add Staff Button */
+.add-btn {
+  background-color: #2e54df;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.add-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Staff Table Wrapper */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Staff Table */
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(34, 6, 6, 0.05);
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.staff-table th,
+.staff-table td {
+  border: 1px solid #000000;
+  padding: 12px;
+  text-align: center;
+}
+
+.staff-table th {
+  background-color: #185adf;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.staff-table td {
+  color: #4b5563;
+}
+
+/* Action Buttons */
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.edit-btn {
+  background-color: #2563eb;
+  color: white;
+}
+.edit-btn:hover {
+  background-color: #1e40af;
+}
+
+.delete-btn {
+  background-color: #f38333;
+  color: white;
+}
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 10px rgb(63, 50, 246);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Form Inputs */
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.modal input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Modal Button */
+.modal button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal .save-btn {
+  background-color: #28a745;
+  color: white;
+}
+.modal .save-btn:hover {
+  background-color: #218838;
+}
+
+.modal .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+.modal .cancel-btn:hover {
+  background-color: #495057;
+}
+
+/* Responsive for Small Screens */
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .staff-table th,
+  .staff-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .add-btn,
+  .edit-btn,
+  .delete-btn {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

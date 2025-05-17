@@ -1,0 +1,33 @@
+.class-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-height: 60vh;
+    padding: 20px;
+  }
+  
+  .class-boxes button {
+    color: black;
+    background-color: #f9f9f9;
+    border: 2px solid #1326bc;
+    border-radius: 10px;
+    width: 350px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .class-boxes button:hover {
+    background-color: #dfe7ff;
+    border-color: #1820b3;
+    transform: scale(1.03);
+  }
+  

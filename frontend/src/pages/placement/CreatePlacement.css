@@ -1,0 +1,108 @@
+/* Container styles */
+.placement-container {
+    padding: 1.5rem;
+  }
+  
+  /* Header section */
+  .placement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .placement-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .placement-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .placement-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Form styles */
+  .placement-form {
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .placement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  
+  .placement-form input,
+  .placement-form select {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+  }
+  
+  .placement-submit {
+    margin-top: 1rem;
+    background-color: #16a34a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .placement-submit:hover {
+    background-color: #15803d;
+  }
+  
+  /* Table styles */
+  .placement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .placement-table th,
+  .placement-table td {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .placement-table thead {
+    background-color: #e5e7eb;
+  }
+  
+  .placement-actions button {
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #f59e0b;
+  }
+  
+  .edit-btn:hover {
+    background-color: #d97706;
+  }
+  
+  .delete-btn {
+    background-color: #dc2626;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b91c1c;
+  }
+  
